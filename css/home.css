@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b1b1b;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo h1 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #7b00e6;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+}
+
+.hero-section {
+    background-color: black;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.hero-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #7b00e6;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #9a00ff;
+}
+
+.hero-image {
+    max-width: 45%;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* About Section */
+.about-section {
+    padding: 50px 20px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.about-text h2 {
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 18px;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    max-width: 300px; /* Tamanho quadrado definido */
+    max-height: 300px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    object-fit: cover; /* Mantém a imagem ajustada no quadrado */
+}
+
+
+/* Modulos */
+.modules-section {
+    padding: 50px 20px;
+    background-color: #111;
+    text-align: center;
+}
+
+.modules-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.module-card {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.module-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.module-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.module-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.module-link {
+    color: #7b00e6;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.module-link:hover {
+    color: #9a00ff;
+}
+
+/* Estilos dos módulos */
+.modules-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px; /* Reduz o espaço entre os módulos */
+}
+
+.swiper-slide {
+    position: relative;
+    flex: 0 0 auto;
+    width: 280px;
+    margin: 0 10px; /* Reduz o espaço entre os módulos */
+    opacity: 0.7; 
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    background: rgba(34, 1, 57, 0.6); /* Fundo dos módulos */
+    border: 1px solid rgba(56, 2, 88, 0.772); /* Borda mais clara */
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(80, 9, 143, 0.5);
+    overflow: hidden;
+}
+
+.swiper-slide:hover {
+    transform: scale(1.1); /* Aumenta o módulo ao passar o mouse */
+    opacity: 1; /* Aumenta a opacidade ao passar o mouse */
+}
+
+.tranding-slide-img {
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+.tranding-slide-img img {
+    width: 100%;
+    height: 160px; 
+    object-fit: cover;
+    border-bottom: 1px solid rgba(98, 26, 157, 0.3); 
+}
+
+/* Conteúdo dos módulos */
+.tranding-slide-content {
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.9); /* Fundo mais escuro para o conteúdo */
+    border-radius: 0 0 10px 10px;
+    color: #FFFFFF; 
+    text-align: center;
+}
+
+.modulo_title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #8d84c4; 
+    font-weight: bold;
+}
+
+/* Contato */
+.contact-section {
+    padding: 50px 20px;
+    background-color: #111; 
+    margin-top: 20px; 
+}
+
+.contact-section h2 {
+    font-size: 28px; 
+    color: #fff; 
+    margin-bottom: 15px; 
+    text-align: left; 
+}
+
+.contact-section p {
+    font-size: 16px; 
+    color: #ccc;
+    text-align: left; 
+    margin-bottom: 30px; 
+}
+
+.contact-form {
+    display: flex; 
+    flex-direction: column; 
+}
+
+.contact-form label {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 5px; 
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #7b00e6; 
+    border-radius: 4px; 
+    background-color: #222; 
+    color: #fff; 
+}
+
+.contact-form textarea {
+    resize: vertical; 
+}
+
+.submit-button {
+    padding: 10px 15px;
+    background-color: #7b00e6; 
+    color: #fff;
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.submit-button:hover {
+    background-color: #9a00ff; 
+}
+
+.contact-link {
+    color: #7b00e6;
+    text-decoration: none; 
+}
+
+.contact-link:hover {
+    color: #9a00ff; 
+}
+
+
+
+/* Footer */
+.main-footer {
+    background-color: #1b1b1b;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero-content-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero-image {
+        max-width: 80%;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        padding-right: 0;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #111;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+body {
+    background-color: #000; 
+    color: #E0E0E0;
+    font-family: Arial, sans-serif;
+}
+
+section#planetas {
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1.section-heading {
+    font-size: 36px; 
+    color: #343762; 
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(80, 4, 103, 0.5); 
+}
+
+h3.section-subheading {
+    font-size: 20px;
+    color: #c8d0dc;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(176, 196, 222, 0.5); 
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Create Your Planet</title>
+    <link rel="stylesheet" href="../../css/modulos/modulo5.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Create Your Planet</h1>
+    </header>
+    
+    <main class="planet-creation-container">
+        <section class="introduction">
+            <h2>Welcome to Your Planet Creation Adventure!</h2>
+            <p>Create your very own planet by choosing its name, type, atmosphere, size, and color. Let's unleash your imagination!</p>
+        </section>
+
+        <div class="content-wrapper">
+            <div class="form-section">
+                <h3>Create Your Planet:</h3>
+                <label for="planetName">Planet Name:</label>
+                <input type="text" id="planetName" placeholder="Enter your planet's name">
+
+                <label for="planetType">Select Planet Type:</label>
+                <select id="planetType">
+                    <option value="terrestrial">Terrestrial</option>
+                    <option value="gas_giant">Gas Giant</option>
+                    <option value="ice_giant">Ice Giant</option>
+                    <option value="super_earth">Super-Earth</option>
+                </select>
+
+                <label for="atmosphere">Describe the atmosphere:</label>
+                <input type="text" id="atmosphere" placeholder="Describe the atmosphere">
+
+                <label for="size">Size (in kilometers):</label>
+                <input type="number" id="size" placeholder="Enter size">
+
+                <label for="color">Select Color:</label>
+                <input type="color" id="color" value="#3498db">
+
+                <button id="createButton">Create Planet</button>
+            </div>
+
+            <div id="planetDisplay" class="planet-display">
+                <!--planeta aparece aqui oh -->
+            </div>
+        </div>
+    </main>
+
+    <div class="module-nav">
+        <a href="../modulos/modulo4.html" class="prev-module-btn">Previous Module</a>
+        <a href="../home.html" class="next-module-btn">Home</a>
+    </div>
+
+    <script src="../../javascript/modulo5.js"></script>
+</body>
+
+</html>

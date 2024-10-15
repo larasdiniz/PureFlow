@@ -1,0 +1,215 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #000; 
+    color: #fff; 
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: rgba(50, 50, 50, 0.9);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.header h1 {
+    color: #ffffff;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: rgba(30, 30, 30, 0.9);
+    padding: 30px 20px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+    transition: background-color 0.3s ease, opacity 0.3s ease; 
+}
+
+.sidebar:hover {
+    background-color: rgba(50, 50, 50, 1);
+}
+
+.sidebar h3 {
+    color: #9e06cc; 
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 15px 0;
+}
+
+.sidebar a {
+    color: #8d84c4; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sidebar a:hover {
+    color: #ff79c6; 
+}
+
+.content {
+    margin-left: 300px; 
+    padding: 50px; 
+    max-width: 1000px;
+    margin-top: 100px; /* Adicione margem superior para evitar sobreposição */
+}
+
+.content-image {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 20px; 
+}
+
+.exoplanet-img {
+    width: 300px; 
+    height: auto; 
+    margin-right: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); 
+}
+
+.image-text {
+    max-width: 600px; 
+    color: #ffffff; 
+    line-height: 1.6; 
+}
+
+.chapter-section {
+    margin-bottom: 40px; 
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 10px; 
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(91, 49, 143, 0.3); 
+}
+
+.chapter-section h1 {
+    color: #ff79c6; 
+    text-align: center; 
+}
+
+.chapter-section p {
+    color: #f0f0f0; 
+    line-height: 1.6; 
+}
+
+.chapter-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.chapter-nav a {
+    background-color: #9e06cc; 
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.chapter-nav a:hover {
+    background-color: #7b00e6; 
+    transform: scale(1.05);
+}
+
+/* Estilos do Quiz */
+.quiz-section {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: rgb(30, 30, 30); 
+    box-shadow: 0 0 15px rgba(91, 49, 143, 0.3);
+}
+
+.quiz-question {
+    margin-bottom: 1rem;
+}
+
+.quiz-question p {
+    font-weight: bold;
+    color: #ff79c6; /* Cor das perguntas roxas */
+}
+
+.quiz-question label {
+    color: #fdf8f8; /* Texto das opções em branco */
+}
+
+.submit-btn {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #9e06cc; /* Cor de fundo igual aos botões de navegação */
+    border: none;
+    border-radius: 5px;
+    color: #ff79c6;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #7b00e6; /* Cor de fundo ao passar o mouse igual aos botões de navegação */
+    transform: scale(1.05);
+}
+
+/* Estilo do botão de áudio */
+.audio-btn {
+    border-radius: 50%; /* Botão redondo */
+    background-color: #9e06cc; /* Cor de fundo */
+    color: #ffffff; /* Texto branco */
+    border: none;
+    padding: 10px 15px; /* Ajustar o tamanho */
+    cursor: pointer;
+    position: fixed; /* Alterado para fixed */
+    bottom: 20px; /* Distância do fundo da tela */
+    right: 20px; /* Distância da direita da tela */
+    transition: background-color 0.3s ease;
+    z-index: 1000; /* Para garantir que fique acima de outros elementos */
+}
+
+.audio-btn:hover {
+    background-color: #7b00e6; /* Cor de fundo ao passar o mouse */
+}
+.module-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #1b1b1b;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.module-nav a {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #2e2e2e;
+    border: 2px solid #7b00e6;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.module-nav a:hover {
+    background-color: #7b00e6;
+    transform: scale(1.05);
+}
+
+.module-nav a:active {
+    transform: scale(0.95);
+}
